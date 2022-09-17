@@ -57,6 +57,20 @@
 .NumberKidz p{
     font-weight: 1000;
 }
+
+
+.subscribeKidz{
+    display: flex;
+    justify-content: center;
+}
+
+.AboutUsKidz, .SubKidz{
+    width: 30%;
+}
+
+.widgetKidz{
+    width: 40%;
+}
 /* end DUC */
 
 
