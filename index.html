@@ -112,9 +112,9 @@
             <div class="widgetKidz subInfoKidz">
                 <div class="TabWidgetKidz">
                     <ul>
-                        <li id="FundraisingKidz" onclick="getCategoriesKidz('FundraisingKidz')">Fundraising</li>
-                        <li id="VolunteerKidz" onclick="getCategoriesKidz('VolunteerKidz')">Volunteer</li>
-                        <li id="DonationKidz" onclick="getCategoriesKidz('DonationKidz')">Make Donation</li>
+                        <li class="xKidz activeTabKidz" id="FundraisingKidz" onclick="getCategoriesKidz('FundraisingKidz')">Fundraising</li>
+                        <li class="xKidz" id="VolunteerKidz" onclick="getCategoriesKidz('VolunteerKidz')">Volunteer</li>
+                        <li class="xKidz" id="DonationKidz" onclick="getCategoriesKidz('DonationKidz')">Make Donation</li>
                     </ul>
                 </div>
     
@@ -128,9 +128,9 @@
                     <div class="SubCategoryKidz VolunteerKidz" style="display: none;">
                         <h1>Become a Volunteer</h1>
                         <p>We depend on volunteers from our local community, joining us you can both gain experience and help others.</p>
-                        <input type="text" class="textKidz">
-                        <input type="text" class="textKidz">
-                        <input type="text" class="messKidz">
+                        <input type="text" class="textKidz" placeholder="Name*">
+                        <input type="text" class="textKidz" placeholder="Email*">
+                        <input type="text" class="messKidz" placeholder="Message*">
                         <button>Send</button>
                     </div>
     
@@ -143,11 +143,25 @@
             </div>
     
             <div class="SubKidz subInfoKidz">
-                <span class="fa"></span>
-                <h1>Subscribe To Our Newsletter</h1>
-                <input type="text">
-                <button>Subscribe</button>
+                <div class="SubCoverKidz">
+                    <span style="margin: 50px auto;" class="fa"></span>
+                    <h1>Subscribe To Our Newsletter</h1>
+                    <input type="text" class="textKidz" placeholder="Email*">
+                    <button>Subscribe</button>
+                </div>
             </div>
+        </div>
+    </div>
+
+    <div class="eventKidz">
+        <div class="eventCoverKidz">
+            <div class="eventImgKidz"></div>
+
+            <div class="upcomingEventKidz">
+                
+            </div>
+
+            <div></div>
         </div>
     </div>
     <!-- end DUC --> 
