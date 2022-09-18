@@ -1,4 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* start PHUONG */
+
 /* end PHUONG */
 
 
@@ -15,6 +29,56 @@
 
 
 /* start DUC */
+.infoKidz{
+    background-image: url('img/ducsImg/mt-1961-content-bg-5.jpg');
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.infoNumberKidz{
+    display: flex;
+    justify-content: center;
+}
+
+.NumberKidz{
+    display: block;
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.NumberKidz h1, .NumberKidz p{
+    color: white;
+}
+
+.NumberKidz h1{
+    font-size: 90px;
+    font-weight: 1000;
+}
+
+.NumberKidz p{
+    font-weight: 1000;
+}
+
+
+.subscribeKidz{
+    display: flex;
+    justify-content: center;
+}
+
+.AboutUsKidz, .SubKidz{
+    width: 30%;
+}
+
+.widgetKidz{
+    width: 40%;
+}
 /* end DUC */
 
 
