@@ -62,10 +62,24 @@
 .subscribeKidz{
     display: flex;
     justify-content: center;
+    min-height: 640px;
+}
+
+.subInfoKidz{
+    margin: 20px;
+    padding: 10px;
 }
 
 .AboutUsKidz, .SubKidz{
-    width: 30%;
+    
+}
+
+.SubKidz{
+    width: 20%;
+}
+
+.AboutUsKidz{
+    width: 15%;
 }
 
 .widgetKidz{
