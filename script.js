@@ -19,6 +19,19 @@ fetch(api)
 
 
 // start DUC
+function getCategoriesKidz(x) {
+    document.getElementById("FundraisingKidz").classList.remove("activeTabKidz");
+    document.getElementById("VolunteerKidz").classList.remove("activeTabKidz");
+    document.getElementById("DonationKidz").classList.remove("activeTabKidz");
+    document.getElementById(x).classList.add("activeTabKidz");
+    for (var i = 0; i < 3; i++) {
+      document.getElementsByClassName("SubCategoryKidz")[i].style.display = "none";
+    }
+    for (var i = 0; i < document.getElementsByClassName(x).length; i++) {
+      document.getElementsByClassName(x)[i].style.display = "block";
+    }
+    console.log(x);
+  }
 // end DUC
 
 

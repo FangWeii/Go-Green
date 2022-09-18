@@ -93,6 +93,19 @@
 .widgetKidz{
     width: 40%;
 }
+
+.TabWidgetKidz{
+    width: 100%;
+}
+
+.TabWidgetKidz ul{
+    display: flex;
+    justify-content: center;
+}
+
+.TabWidgetKidz ul li{
+    padding: 20px;
+}
 /* end DUC */
 
 
