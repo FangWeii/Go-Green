@@ -92,7 +92,7 @@
 }
 
 .AboutUsKidz{
-    width: 15%;
+    width: 18%;
 }
 
 .widgetKidz{
@@ -116,6 +116,10 @@
     margin: 20px;
 }
 
+.AboutUsUpKidz span{
+    margin-right: 10px;
+}
+
 .AboutUsDownKidz h1, .AboutUsUpKidz p{
     font-size: x-large;
     font-weight: 900;
@@ -123,6 +127,7 @@
 
 .AboutUsUpKidz p{
     margin-left: 10px;
+    padding-top: 20px;
 }
 
 .SubCategoryKidz{
