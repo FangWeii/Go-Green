@@ -121,13 +121,13 @@
 }
 
 .AboutUsDownKidz h1, .AboutUsUpKidz p{
-    font-size: x-large;
     font-weight: 900;
 }
 
 .AboutUsUpKidz p{
     margin-left: 10px;
-    padding-top: 20px;
+    padding-top: 25px;
+    font-size: larger;
 }
 
 .SubCategoryKidz{
