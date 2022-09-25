@@ -411,14 +411,152 @@
 .upcomingEventKidz{
     background-color: #252839;
     position: relative;
-    width: 50%;
+    width: 33%;
     min-height: 418px;
     left: 759px;
+    display: block;
+    justify-content: center;
+    align-items: center;
 }
 
+.WhoWeAreKidz{
+    margin-left: 30px;
+    padding-bottom: 30px;
+}
+
+.missionKidz{
+    display: flex;
+    background-color: white;
+    width: 93%;
+    height: 50px;
+    margin: 15px 0;
+    padding: 10px 20px;
+}
+
+.missionKidz span{
+    margin-left: 240px;
+}
+
+.missionKidz span, .missionKidz h3{
+    margin-top: 4px;
+}
+
+.SubMissionKidz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.SubMissionKidz p{
+    color: white;
+}
 
 /* end DUC */
 
 
 /* start NGHIA */
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: #171a21;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+.text {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 40px auto;
+}
+footer input[type='email']{
+    width: calc(100vw - 40vw);
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+    border: none;
+    color: var(--mycolor);
+}
+footer input[type='submit']{
+    border: none;
+    outline: none;
+    border-radius: 0 30px 30px 0;
+    padding: 10px;
+    color: #fff;
+    background: var(--mycolor);
+    font-size: 25px;
+    cursor: pointer;
+}
+footer input:hover[type='submit'] {background: blue;}
+.list-footer {
+    margin: 40px auto;
+    display: flex;
+    list-style-type: none;
+}
+.list-footer li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+.list-footer li a:hover{color: var(--mycolor);}
+
+.social-media {
+    margin: 20px auto;
+}
+.social-media i {
+    padding: 20px;
+    font-size: 25px;
+    color: #fff;
+}
+.social-media i:hover{
+    color: blue;
+}
+
+@media(max-width:810px){
+    .text ,  footer input[type='email'] ,
+    footer input[type='submit'] {
+        font-size: 20px;
+    }
+    .list-footer li a {
+        padding: 15px;
+        font-size: 15px;
+    }
+    .social-media i {
+        padding: 10px;
+    }
+}
+@media(max-width:610px){
+    .text ,  footer input[type='email'] ,
+    footer input[type='submit'] {
+        font-size: 14px;
+    }
+    .list-footer li a {
+        padding: 10px;
+        font-size: 12px;
+    }
+    .social-media i {
+       font-size: 15px;
+    }
+}
+@media(max-width:470px){
+    .text {
+        font-size: 12px;
+    }
+    .list-footer li a {
+        padding: 5px;
+    }
+}
+@media(max-width:330px){
+    .text {
+        font-size: 10px;
+    }
+}
 /* end NGHIA */

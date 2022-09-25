@@ -56,7 +56,21 @@ function getCategoriesKidz(x) {
       document.getElementsByClassName(x)[i].style.display = "block";
     }
     console.log(x);
+}
+
+function getCategories2Kidz(x) {
+  document.getElementById("OurMissionKidz").classList.remove("activeKidz");
+  document.getElementById("OurVisionKidz").classList.remove("activeKidz");
+  document.getElementById("OurHistoryKidz").classList.remove("activeKidz");
+  document.getElementById(x).classList.add("activeKidz");
+  for (var i = 0; i < 3; i++) {
+    document.getElementsByClassName("SubMissionKidz")[i].style.display = "none";
   }
+  for (var i = 0; i < document.getElementsByClassName(x).length; i++) {
+    document.getElementsByClassName(x)[i].style.display = "block";
+  }
+  console.log(x);
+}
 // end DUC
 
 
