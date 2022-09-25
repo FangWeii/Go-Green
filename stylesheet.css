@@ -81,7 +81,7 @@
     position: absolute;
     border-radius: 100%;
     z-index: 0;
-    margin-left: 1150px;
+    margin-left: 1069px;
     margin-top: 200px;
 }
 .take-action {
@@ -117,6 +117,7 @@
     margin-top: 120px;
     margin-left: 350px;
     margin-bottom: 120px;
+        width: 76.9%;
 }
 .saving-whales-text {
     min-width: 540px;
@@ -124,6 +125,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 40%;
+}
+
+.saving-bgi{
+    background-image: url('https://template94870.motopreview.com/mt-demo/94800/94870/mt-content/uploads/2020/01/mt-1961-content-bg-4.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    width: 60%;
+    height: 700px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .saving-whales-header {
     color: #3cc88f;
@@ -184,6 +199,7 @@
     padding: 20px;
     margin-top: 20px;
 }
+
 /* end VY */
 
 
@@ -379,6 +395,10 @@
     margin-top: 50px;
 }
 
+.eventCoverKidz{
+    display: flex;
+}
+
 .eventImgKidz{
     background-image: url('img/ducsImg/mt-1961-content-bg-6.jpg');
     background-position: center; /* Center the image */
@@ -386,8 +406,16 @@
     background-size: cover;
     width: 50%;
     min-height: 418px;
+    position: absolute;
 }
 
+.upcomingEventKidz{
+    background-color: #252839;
+    position: relative;
+    width: 50%;
+    min-height: 418px;
+    left: 759px;
+}
 
 
 /* end DUC */
