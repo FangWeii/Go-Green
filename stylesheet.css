@@ -11,6 +11,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
 }
 
 /* start PHUONG */
@@ -188,15 +189,167 @@
 .subscribeKidz{
     display: flex;
     justify-content: center;
+    min-height: 640px;
 }
 
-.AboutUsKidz, .SubKidz{
-    width: 30%;
+.sub-SubKidz{
+    display: flex;
+    justify-content: center;
+    height: 60%;
+    margin-top: 100px;
+}
+
+.subInfoKidz{
+    margin: 20px;
+    padding: 10px;
+}
+
+
+.SubKidz{
+    width: 20%;
+}
+
+.AboutUsKidz{
+    width: 18%;
 }
 
 .widgetKidz{
     width: 40%;
 }
+
+.TabWidgetKidz{
+    width: 100%;
+}
+
+.TabWidgetKidz ul{
+    display: flex;
+    justify-content: center;
+}
+
+.TabWidgetKidz ul li{
+    padding: 20px;
+}
+
+.AboutUsDownKidz, .AboutUsUpKidz{
+    margin: 20px;
+}
+
+.AboutUsUpKidz span{
+    margin-right: 10px;
+}
+
+.AboutUsDownKidz h1, .AboutUsUpKidz p{
+    font-weight: 900;
+}
+
+.AboutUsUpKidz p{
+    margin-left: 10px;
+    padding-top: 25px;
+    font-size: larger;
+}
+
+.SubCategoryKidz{
+    width: 90%;
+}
+
+.SubCategoryKidz h1, .SubCategoryKidz p, .SubCategoryKidz input, .SubCategoryKidz button, .SubCoverKidz input, .SubCoverKidz button {
+    margin-top: 20px;
+    display: block;
+}
+
+.SubCategoryKidz input, .SubCoverKidz input{
+    width: 80%;
+    border-radius: 20px;
+    padding: 10px;
+    border: solid 2px rgba(186, 186, 186, 0.629);
+}
+
+.textKidz{
+    height: 35px;
+}
+
+.messKidz{
+    height: 150px;
+}
+
+.VolunteerKidz button, .SubCoverKidz button{
+    padding: 10px;
+    width: 20%;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(0, 255, 183);
+    font-weight: 900;
+    border: solid 1px rgba(186, 186, 186, 0);
+}
+
+.VolunteerKidz button:hover, .SubCoverKidz button:hover{
+    background-color: white;
+    color: rgb(0, 255, 183);
+    border: solid 1px rgb(0, 255, 183);
+}
+
+.xKidz{
+    background-color: rgb(3, 1, 21);
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.activeTabKidz{
+    background-color: rgb(0, 255, 183);
+    color: white;
+}
+
+.SubKidz{
+    background-image: url('img/ducsImg/mt-1961-img-8.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    max-width: 18.5%;
+    height: 385px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.SubCoverKidz button{
+    width: 60%;
+    height: 50px;
+    border-radius: 30px;
+    margin: 20px auto;
+}
+
+.SubCoverKidz input{
+    margin: 20px auto;
+    height: 45px;
+    width: 95%;
+    border-radius: 30px;
+}
+
+.SubCoverKidz h1{
+    color: white;
+    margin: 20px auto;
+    font-size: 150%;
+}
+
+.SubCoverKidz{
+    margin-top: 50px;
+}
+
+.eventImgKidz{
+    background-image: url('img/ducsImg/mt-1961-content-bg-6.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    width: 50%;
+    min-height: 418px;
+}
+
+
+
 /* end DUC */
 
 
