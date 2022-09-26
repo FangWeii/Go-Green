@@ -424,35 +424,27 @@
     padding-bottom: 30px;
 }
 
-.missionKidz{
+.missonKidz{
     display: flex;
     background-color: white;
-    width: 93%;
+    width: 90%;
     height: 50px;
-    margin: 15px 0;
-    padding: 10px 20px;
+    margin-bottom: 20px;
 }
 
-.missionKidz span{
-    margin-left: 240px;
+.missonKidz h3{
+    margin-top: 12px;
+    margin-left: 12px;
 }
 
-.missionKidz span, .missionKidz h3{
-    margin-top: 4px;
-}
-
-.SubMissionKidz{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#myDIV, #myDIV2, #myDIV3 {
     width: 80%;
-    margin: 30px auto;
-}
+    margin: 20px auto;
+  }
 
-.SubMissionKidz p{
+  #myDIV p, #myDIV2 p, #myDIV3 p{
     color: white;
-}
-
+  }
 /* end DUC */
 
 
