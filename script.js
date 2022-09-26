@@ -77,7 +77,7 @@ function myFunction2() {
 }
 
 function myFunction3() {
-  var x = document.getElementById("myDIV3   ");
+  var x = document.getElementById("myDIV3");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
