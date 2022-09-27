@@ -404,13 +404,13 @@
     background-size: cover;
     width: 50%;
     min-height: 418px;
-    position: absolute;
 }
 
 .upcomingEventKidz{
+    padding-top: 10px;
     background-color: #252839;
     position: relative;
-    width: 33%;
+    width: 60%;
     min-height: 418px;
     left: 759px;
     display: block;
@@ -431,6 +431,11 @@
     margin-bottom: 20px;
 }
 
+.missonKidz:focus{
+    background-color: #3cc88f;
+    color: white;
+}
+
 .missonKidz h3{
     margin-top: 12px;
     margin-left: 12px;
@@ -439,6 +444,7 @@
 #myDIV, #myDIV2, #myDIV3 {
     width: 80%;
     margin: 20px auto;
+    display: none;
   }
 
   #myDIV p, #myDIV2 p, #myDIV3 p{
