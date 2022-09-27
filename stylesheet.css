@@ -444,12 +444,11 @@
 #myDIV, #myDIV2, #myDIV3 {
     width: 80%;
     margin: 20px auto;
-    display: none;
-  }
+}
 
-  #myDIV p, #myDIV2 p, #myDIV3 p{
+#myDIV p, #myDIV2 p, #myDIV3 p{
     color: white;
-  }
+}
 /* end DUC */
 
 

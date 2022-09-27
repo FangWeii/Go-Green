@@ -65,6 +65,7 @@ function myFunction() {
   } else {
     x.style.display = "none";
   }
+
 }
 
 function myFunction2() {
@@ -84,6 +85,47 @@ function myFunction3() {
     x.style.display = "none";
   }
 }
+
+function animateNumber(finalNumber, duration = 5000, startNumber = 0, callback) {
+  let currentNumber = startNumber
+  const interval = window.setInterval(updateNumber, 17)
+  function updateNumber() {
+    if (currentNumber >= finalNumber) {
+      clearInterval(interval)
+    } else {
+      let inc = Math.ceil(finalNumber / (duration / 17))
+      if (currentNumber + inc > finalNumber) {
+        currentNumber = finalNumber
+        clearInterval(interval)
+      } else {
+        currentNumber += inc
+      }
+      callback(currentNumber)
+    }
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  animateNumber(1053, 1500, 0, function (number) {
+    const formattedNumber = number.toLocaleString()
+    document.getElementById('clientsCountKidz').innerText = formattedNumber
+  })
+  
+  animateNumber(378, 1500, 0, function (number) {
+    const formattedNumber = number.toLocaleString()
+    document.getElementById('employmentsKidz').innerText = formattedNumber
+  })
+  
+  animateNumber(5360, 1500, 0, function (number) {
+    const formattedNumber = number.toLocaleString()
+    document.getElementById('hoursKidz').innerText = formattedNumber
+  })
+
+  animateNumber(981, 1500, 0, function (number) {
+    const formattedNumber = number.toLocaleString()
+    document.getElementById('awardsKidz').innerText = formattedNumber
+  })
+})
 
 // end DUC
 
