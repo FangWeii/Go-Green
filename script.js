@@ -58,32 +58,15 @@ function getCategoriesKidz(x) {
     console.log(x);
 }
 
-function myFunction() {
-  var x = document.getElementById("myDIV");
+function myFunction(a, b) {
+  var x = document.getElementById(a);
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
     x.style.display = "none";
   }
-
-}
-
-function myFunction2() {
-  var x = document.getElementById("myDIV2");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-
-function myFunction3() {
-  var x = document.getElementById("myDIV3");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+  document.getElementById(b).classList.toggle('show');
+  x.classList.toggle('hide');
 }
 
 function animateNumber(finalNumber, duration = 5000, startNumber = 0, callback) {
@@ -106,22 +89,22 @@ function animateNumber(finalNumber, duration = 5000, startNumber = 0, callback) 
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  animateNumber(1053, 1500, 0, function (number) {
+  animateNumber(1053, 3000, 0, function (number) {
     const formattedNumber = number.toLocaleString()
     document.getElementById('clientsCountKidz').innerText = formattedNumber
   })
   
-  animateNumber(378, 1500, 0, function (number) {
+  animateNumber(378, 3000, 0, function (number) {
     const formattedNumber = number.toLocaleString()
     document.getElementById('employmentsKidz').innerText = formattedNumber
   })
   
-  animateNumber(5360, 1500, 0, function (number) {
+  animateNumber(5360, 3000, 0, function (number) {
     const formattedNumber = number.toLocaleString()
     document.getElementById('hoursKidz').innerText = formattedNumber
   })
 
-  animateNumber(981, 1500, 0, function (number) {
+  animateNumber(981, 3000, 0, function (number) {
     const formattedNumber = number.toLocaleString()
     document.getElementById('awardsKidz').innerText = formattedNumber
   })

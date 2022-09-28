@@ -431,11 +431,6 @@
     margin-bottom: 20px;
 }
 
-.missonKidz:focus{
-    background-color: #3cc88f;
-    color: white;
-}
-
 .missonKidz h3{
     margin-top: 12px;
     margin-left: 12px;
@@ -444,11 +439,23 @@
 #myDIV, #myDIV2, #myDIV3 {
     width: 80%;
     margin: 20px auto;
+    /* opacity: 0;
+    transition: all ease 0.8s; */
+}
+
+.show{
+    background-color: #3cc88f;
+    color: white;
 }
 
 #myDIV p, #myDIV2 p, #myDIV3 p{
     color: white;
 }
+
+#myDIV .hide {
+    /* opacity: 1; */
+}
+  
 /* end DUC */
 
 
