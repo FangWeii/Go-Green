@@ -443,7 +443,7 @@
     transition: all ease 0.8s; */
 }
 
-.show{
+.show, .activeMissionKidz{
     background-color: #3cc88f;
     color: white;
 }

@@ -58,14 +58,27 @@ function getCategoriesKidz(x) {
     console.log(x);
 }
 
-function myFunction(a, b) {
+function getMissionKidz(x) {
+  document.getElementById("missonKidz1").classList.remove("activeMissionKidz");
+  document.getElementById("missonKidz2").classList.remove("activeMissionKidz");
+  document.getElementById("missonKidz3").classList.remove("activeMissionKidz");
+  document.getElementById(x).classList.add("activeMissionKidz");
+  for (var i = 0; i < 3; i++) {
+    document.getElementsByClassName("SubMissionKidz")[i].style.display = "none";
+  }
+  for (var i = 0; i < document.getElementsByClassName(x).length; i++) {
+    document.getElementsByClassName(x)[i].style.display = "block";
+  }
+}
+
+function myFunction(a) {
   var x = document.getElementById(a);
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
     x.style.display = "none";
   }
-  document.getElementById(b).classList.toggle('show');
+  // document.getElementById(b).classList.toggle('show');
   x.classList.toggle('hide');
 }
 
