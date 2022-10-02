@@ -149,7 +149,7 @@ function addNew(){
       let phone = document.getElementById("phone").value;
       let message = document.getElementById("message").value;
       let donorMessage = localStorage.getItem("donorMessage") ? JSON.parse(localStorage.getItem("donorMessage")) : [];
-      listStudent.push({
+      donorMessage.push({
           name : name,
           mail : mail,
           phone : phone,
@@ -162,7 +162,7 @@ function addNew(){
 
 function render() {
   let donorMessage = localStorage.getItem("donorMessage") ? JSON.parse(localStorage.getItem("donorMessage")) : [];
-  let student = `
+  let donor = `
       <tr>
           <th>ID</th>
           <th>Name</th>
@@ -172,8 +172,8 @@ function render() {
           <th>Action</th>
       </tr>
   `
-  listStudent.map((value, index) => {
-      student += `
+  donorMessage.map((value, index) => {
+    donor += `
           <tr>
               <td>${index+1}</td>
               <td>${value.name}</td>
@@ -187,7 +187,7 @@ function render() {
           </tr>
       `
   })
-  document.getElementById("tableContent").innerHTML = student;
+  document.getElementById("tableContent").innerHTML = donor;
 }
 
 // end DUC
