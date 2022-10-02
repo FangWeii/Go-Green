@@ -450,6 +450,7 @@
 
 #myDIV p, #myDIV2 p, #myDIV3 p{
     color: white;
+    margin-right: 20px;
 }
 
 #myDIV .hide {
