@@ -38,8 +38,6 @@ var x = setInterval(function() {
     document.getElementById("second").innerHTML = "00";
   }
 }, 1000);
-// email
-
 // end VY
 
 
