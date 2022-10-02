@@ -6,17 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donors' Messages</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        .form-input{
+            width: 30%;
+        }
+    </style>
 </head>
 <body onload="render()">
     <div class="form">
         <div class="form-group">
-            <label for="name">Name: </label>
-            <input style="margin-left: 10px;" class="form-input" type="text" id="name" placeholder="Enter Your Name">
+            <input class="form-input field" type="text" id="name" placeholder="Your Name">
             <div class="error-message" style="margin-left: 10px;"></div>
         </div>
+        
         <div class="form-group">
-            <label for="address">Address: </label>
-            <input style="margin-left: 10px;" class="form-input" type="text" id="address" placeholder="Enter Your Address">
+            <input class="form-input field" type="text" id="mail" placeholder="Your Email">
+            <div class="error-message" style="margin-left: 10px;"></div>
+        </div>
+        
+        <div class="form-group">
+            <input class="form-input field" type="text" id="phone" placeholder="Phone">
+            <div class="error-message" style="margin-left: 10px;"></div>
+        </div>
+        
+        <div class="form-group">
+            <input class="form-input field" type="text" id="message" placeholder="Message">
             <div class="error-message" style="margin-left: 10px;"></div>
         </div>
         <div class="form-group">
