@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "../../../Desktop/mindx"
+		},
+		{
+			"path": "../../../Desktop/buổi 6"
+		},
+		{
+			"path": "../../../Desktop/localstorage1"
+		},
+		{
+			"path": "../../../Desktop/buổi 8"
+		},
+		{
+			"path": "../../../Desktop/buổi 9"
+		},
+		{
+			"path": "../../../Desktop/test"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "test"
+	}
+}
