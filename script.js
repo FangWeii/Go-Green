@@ -145,24 +145,30 @@ function addNew(){
   let checkErrorElement = arrErrorElement.every(value => value == "");
   if(checkErrorElement){
       let name = document.getElementById("name").value;
-      let address = document.getElementById("address").value;
-      let listStudent = localStorage.getItem("listStudent") ? JSON.parse(localStorage.getItem("listStudent")) : [];
+      let mail = document.getElementById("mail").value;
+      let phone = document.getElementById("phone").value;
+      let message = document.getElementById("message").value;
+      let donorMessage = localStorage.getItem("donorMessage") ? JSON.parse(localStorage.getItem("donorMessage")) : [];
       listStudent.push({
           name : name,
-          address : address
+          mail : mail,
+          phone : phone,
+          message : message
       })
-      localStorage.setItem("listStudent", JSON.stringify(listStudent));
+      localStorage.setItem("donorMessage", JSON.stringify(donorMessage));
       render();
   }
 }
 
 function render() {
-  let listStudent = localStorage.getItem("listStudent") ? JSON.parse(localStorage.getItem("listStudent")) : [];
+  let donorMessage = localStorage.getItem("donorMessage") ? JSON.parse(localStorage.getItem("donorMessage")) : [];
   let student = `
       <tr>
           <th>ID</th>
           <th>Name</th>
-          <th>Address</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Message</th>
           <th>Action</th>
       </tr>
   `
@@ -171,7 +177,9 @@ function render() {
           <tr>
               <td>${index+1}</td>
               <td>${value.name}</td>
-              <td>${value.address}</td>
+              <td>${value.mail}</td>
+              <td>${value.phone}</td>
+              <td>${value.message}</td>
               <td>
                   <button onclick = 'editStudent(${index})'>Edit</button>
                   <button onclick = 'removeItem(${index})'>Delete</button>

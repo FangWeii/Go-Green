@@ -463,7 +463,7 @@
 }
 
 .form-group, .btn-add{
-  display: flex;
+  /* display: flex; */
   margin: 5px;
   padding: 5px;
 }
@@ -476,10 +476,6 @@
 tr, th, td{
   border: solid black 1px;
   margin: 0;
-  padding: 5px;
-}
-
-button{
   padding: 5px;
 }
   
