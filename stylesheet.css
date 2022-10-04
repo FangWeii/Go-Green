@@ -364,7 +364,7 @@
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
     max-width: 18.5%;
-    height: 385px;
+    height: 420px;
     display: block;
     justify-content: center;
     align-items: center;
@@ -389,10 +389,6 @@
     color: white;
     margin: 20px auto;
     font-size: 150%;
-}
-
-.SubCoverKidz{
-    margin-top: 50px;
 }
 
 .eventCoverKidz{
