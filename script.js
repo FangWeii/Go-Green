@@ -181,8 +181,8 @@ function render() {
               <td>${value.phone}</td>
               <td>${value.message}</td>
               <td>
-                  <button onclick = 'editStudent(${index})'>Edit</button>
-                  <button onclick = 'removeItem(${index})'>Delete</button>
+                  <button class ='btn-nghia' onclick = 'editStudent(${index})'>Edit</button>
+                  <button class ='btn-nghia' onclick = 'removeItem(${index})'>Delete</button>
               </td>
           </tr>
       `

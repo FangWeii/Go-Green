@@ -10,6 +10,18 @@
         .form-input{
             width: 30%;
         }
+
+        .btn-nghia{
+            width: 100px;
+        }
+
+        th{
+            color:#2ecc71; 
+        }
+
+        table{
+            margin: 1px auto;
+        }
     </style>
 </head>
 <body onload="render()">
@@ -36,8 +48,8 @@
         <div class="form-group">
             <input type="hidden" id="index">
         </div>
-        <button id="add" class="btn-add" onclick="addNew()">Submit</button>
-        <button id="save" onclick="changeStudent()" style="display : none; margin-left: 6px;">Update</button>
+        <button id="add" class="btn-add btn-nghia" onclick="addNew()">Submit</button>
+        <button id="save" class="btn-nghia" onclick="changeStudent()" style="display : none; margin-left: 6px;">Update</button>
     </div>
 
     <div class="table">
