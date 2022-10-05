@@ -181,7 +181,7 @@ function render() {
               <td>${value.phone}</td>
               <td>${value.message}</td>
               <td>
-                  <button class ='btn-nghia' onclick = 'editStudent(${index})'>Edit</button>
+                  <button class ='btn-nghia' onclick = 'editItem(${index})'>Edit</button>
                   <button class ='btn-nghia' onclick = 'removeItem(${index})'>Delete</button>
               </td>
           </tr>
@@ -190,6 +190,41 @@ function render() {
   document.getElementById("tableContent").innerHTML = donor;
 }
 
+
+function editItem(index){
+  let donorMessage = localStorage.getItem("donorMessage") ? JSON.parse(localStorage.getItem("donorMessage")) : [];
+  document.getElementById("name").value = donorMessage[index].name;
+  document.getElementById("mail").value = donorMessage[index].mail;
+  document.getElementById("phone").value = donorMessage[index].phone;
+  document.getElementById("message").value = donorMessage[index].message;
+  document.getElementById("index").value = index;
+  document.getElementById("save").style.display = "inline-block"
+  document.getElementById("add").style.display = "none"
+}
+
+function changeItem(){
+  let donorMessage = localStorage.getItem("donorMessage") ? JSON.parse(localStorage.getItem("donorMessage")) : [];
+  let index = document.getElementById("index").value;
+  donorMessage[index] = {
+      name : document.getElementById("name").value,
+      mail : document.getElementById("mail").value,
+      phone : document.getElementById("phone").value,
+      message : document.getElementById("message").value
+  }
+  localStorage.setItem("donorMessage", JSON.stringify(donorMessage));
+  render();
+  document.getElementById("save").style.display = "none"
+  document.getElementById("add").style.display = "inline-block"
+}
+
+function removeItem(index){
+  let donorMessage = localStorage.getItem("donorMessage") ? JSON.parse(localStorage.getItem("donorMessage")) : [];
+  let removed = donorMessage.splice(index, 1);
+  console.log(removed);
+  localStorage.removeItem(removed);
+  localStorage.setItem("donorMessage", JSON.stringify(donorMessage));
+  render();
+}
 // end DUC
 
 
